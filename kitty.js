@@ -8,17 +8,20 @@ function hidding_kitty(){
   }
 }
 
-function binding_kitty(){
-  $().click(){
-    // call the hidding kitty
+function binding_kitty(num_id){
+  $("#button"+num_id).click(function(){
+    // call the hidding kitty and switch binding
     hidding_kitty();
-  }
+    $('#kitty'+ num_id).show();
+  });
 }
 
-function binding_counter_kitty(){
+function binding_counter_kitty(num_id){
+ var kitty = "#kitty";
 
 }
 
+// loop thu each function
 
 hidding_kitty();
 $('#kitty').show();
