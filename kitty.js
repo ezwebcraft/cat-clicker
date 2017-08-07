@@ -3,7 +3,7 @@ var buttons = $("button");
 
 function hidding_kitty(){
   //hidding each kitty
-  for(var i = ; i < kitty.length;i++){
+  for(var i = 0; i < kitty.length;i++){
     $(kitty[i]).hide();
   }
 }
@@ -13,20 +13,27 @@ function binding_kitty(num_id){
     // call the hidding kitty and switch binding
     hidding_kitty();
     $('#kitty'+ num_id).show();
-  });
+  })
 }
 
 function binding_counter_kitty(num_id){
- var kitty = "#kitty";
+ var kitty = "#kitty"+num_id;
  $(kitty).click(function(){
-   var counter = $(kitty+" > .counter").text();
-   		counter = parseInt(counter) + 1;
-   		$(kitty+" > .counter").text(counter);
+   var count = $(kitty+" > .counter").text();
+   		count = parseInt(count) + 1;
+   		$(kitty+" > .counter").text(count);
  })
-
 }
 
 // loop thu each function
 
+for(var a = 1;a<=buttons.length;a++){
+  binding_kitty(a);
+}
+
+for(var b = 1;b<=kitty.length;b++){
+  binding_counter_kitty(b);
+}
+
 hidding_kitty();
-$('#kitty').show();
+$('#kitty1').show();
