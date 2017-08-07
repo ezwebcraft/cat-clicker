@@ -18,6 +18,11 @@ function binding_kitty(num_id){
 
 function binding_counter_kitty(num_id){
  var kitty = "#kitty";
+ $(kitty).click(function(){
+   var counter = $(kitty+" > .counter").text();
+   		counter = parseInt(counter) + 1;
+   		$(kitty+" > .counter").text(counter);
+ })
 
 }
 
