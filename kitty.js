@@ -23,6 +23,7 @@ function binding_counter_kitty(num_id){
    		count = parseInt(count) + 1;
    		$(kitty+" > .counter").text(count);
  })
+ $(kitty+" > .name").text(kitty);
 }
 
 // loop thu each function
