@@ -1,3 +1,12 @@
+// creae a base model for clicker
+
+var model = {
+    currentKitty: null,
+    Kitty: []
+
+  };
+
+
 var kitty = $(".kitty");
 var buttons = $("button");
 
