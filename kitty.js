@@ -2,13 +2,33 @@
 
 var kitty_Model = {
     currentKitty: null,
-    Kitty: []
-
+    Kitty: [
+      {
+            clickCount : 0,
+            name : 'Kitty1',
+            imgSrc : 'http://placekitten.com/g/800/410',
+            imgAttribution : 'http://placekitten.com/g/800/410'
+        },
+        {
+            clickCount : 0,
+            name : 'Kitty2',
+            imgSrc : 'http://placekitten.com/g/800/420',
+            imgAttribution : 'http://placekitten.com/g/800/420'
+        }
+    ]
   };
 
-var kitty_controller = {};
+var kitty_controller = {
 
-var kitty_View = {};
+};
+
+var kitty_View = {
+
+
+};
+
+
+
 
 var kitty = $(".kitty");
 var buttons = $("button");
