@@ -20,6 +20,16 @@ var kitty_Model = {
 
 var kitty_controller = {
 
+  init: function(){
+
+  },
+  getKitty:function(){
+
+  },
+  setKitty: function(){
+    
+  }
+
 };
 
 var kitty_View = {
